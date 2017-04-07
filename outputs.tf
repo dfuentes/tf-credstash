@@ -5,5 +5,5 @@ output "kms_key_id" {
 
 // ARN for the generated dynamodb table
 output "dynamo_table_arn" {
-  value       = "${aws_dynamodb_table.arn}"
+  value       = "${aws_dynamodb_table.store.arn}"
 }
