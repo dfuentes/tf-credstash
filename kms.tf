@@ -11,7 +11,7 @@ data "aws_iam_policy_document" "key_policy" {
       type = "AWS"
 
       identifiers = [
-        "arn:aws:iam::${data.aws_caller_identity.current.id}:root",
+        "arn:aws:iam::${data.aws_caller_identity.current.account_id}:root",
       ]
     }
 
