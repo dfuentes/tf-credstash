@@ -31,6 +31,6 @@ resource "aws_kms_key" "credstash_cmk" {
 }
 
 resource "aws_kms_alias" "alias" {
-  name          = "alias/credstash"
+  name          = "${var.key_alias}"
   target_key_id = "${aws_kms_key.credstash_cmk.key_id}"
 }

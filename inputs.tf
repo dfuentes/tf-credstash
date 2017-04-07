@@ -1,3 +1,8 @@
+variable "key_alias" {
+  description = "Alias to give to your kms key"
+  default     = "alias/credstash"
+}
+
 variable "table_name" {
   description = "Name to give to the dynamodb table"
   default     = "credential-store"
